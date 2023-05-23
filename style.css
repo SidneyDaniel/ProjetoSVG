@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+    color: #fff;
+}
+
+body{
+    /* background: url(https://fastly.picsum.photos/id/171/2048/1536.jpg?hmac=16eVtfmqTAEcr8VwTREQX4kV8dzZKcGWI5ouMlhRBuk) no-repeat;
+    background-size: cover;
+    background-position: center; */
+    background-color: #0D1117;
+}
+/* .modulo{
+    display: flex;
+} */
+
+
+
+
+.condicao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

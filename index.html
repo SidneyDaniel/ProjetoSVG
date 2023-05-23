@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/status.css">
+    <link rel="stylesheet" href="CSS/temperatura.css">
+    <link rel="stylesheet" href="CSS/diaLocal.css">
+    <link rel="stylesheet" href="CSS/nivelSnaks.css">
+    <link rel="stylesheet" href="CSS/imagem.css">
+    <title>Document</title>
+</head>
+<body>
+
+<section class="condicao">
+    <div class="modulo um">
+    
+        <div class="circulos">
+    
+            <div class="animationCirculo">
+                <div class="circulo"></div>
+                <div class="imgPerfil"><img src="assets/1.svg" alt=""></div>
+            </div>
+    
+            <div class="nomeStatus">
+                <h1>Sidney Daniel</h1>
+                <div class="status">
+                    <span class="circuloStatus"></span>
+                    <p>
+                        <span>STATUS</span>
+                        ONLINE
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+        
+    </div>
+
+    <div class="modulo dois">
+      <div class="circuloTemperatura"></div>
+      <h2 class="numero">60°</h2>
+      <h1>Temperatura</h1>
+    </div>
+
+</section> 
+
+<section class="imagem">
+    <img src="assets/gifs/1.gif" alt="">
+</section>
+
+<section class="condicao dois">
+    
+    <div class="modulo tres">
+      <div class="atividade">
+        <h1>Relaxando</h1>
+        <span style="--i:1"></span>
+        <span style="--i:2"></span>
+        <span style="--i:3"></span>
+        <span style="--i:4"></span>
+      </div>
+
+      <div class="diaLocalData">
+        <div class="dia">
+            <h1>dia</h1>
+            <h2><span data-type="contagem"></span></h2>
+          </div>
+          
+          <div class="localData">
+            <h1>DATA <span data-type="diaMesAno" ></span> </h1>
+            <h1>LOCAL  <span>Brasilia/DF <span data-type="horas"></span></span> </h1>
+          </div>
+      </div>
+
+    </div>
+    
+    <div class="modulo quatro">
+        <div class="colunas">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <span style="--i:4"></span>
+        </div>
+
+        <div class="nivel">
+            <h1>níveis de snacks</h1>
+            <h2><span class="perigo">⚠</span>CRITÍCO</h2>
+            <div class="barra">
+                <div class="progresso"></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="JS/data.js"></script>
+</body>
+</html>

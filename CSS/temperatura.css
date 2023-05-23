@@ -1,0 +1,56 @@
+.modulo.dois{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 5rem 5rem 0 0;
+}
+
+
+.circuloTemperatura{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 8rem;
+    border-radius: 50%;
+    border:inherit;
+    border: 10px solid #f1760b;
+    border-right-color: #aeaaaa49;
+    border-left-color: red;
+    animation:inherit;
+    animation: temp 6s infinite linear;
+}
+
+
+.circuloTemperatura::before,
+.circuloTemperatura::after{
+    content: "";
+    position: absolute;
+    inset:-9.3px;
+    border-radius: 50%;
+    border:inherit;
+    animation:inherit;
+    animation-duration: 4s;
+}
+
+.circuloTemperatura::after{
+    animation-duration: 8s;
+}
+
+.numero{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    top: 90px;
+    font-size: 2em;
+}
+
+@keyframes temp {
+    100% {transform: rotate(1turn)}
+}

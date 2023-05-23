@@ -1,0 +1,146 @@
+/* 
+  <div class="modulo um">
+        <div>
+            <span class="circulo-1"></span>
+            <div class="circulo"></div>
+            <span class="circulo-2"></span>
+            <img src="" alt="">
+        </div>
+
+        <h1>Sidney Daniel</h1>
+        
+        <div>
+            <span class="circuloStatus"></span>
+            <p>status online</p>
+        </div>
+    </div>
+ */
+.modulo.um{
+    margin: 5rem 0 0 5rem;
+}
+.circulos{
+    display: flex;
+    flex-direction: row;
+}
+
+.circulo{
+    background-color: #000000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #0000;
+    border-right-color: #ffffff97;
+    position: relative;
+    animation: s4 2s infinite linear;
+    margin-bottom: 2rem;
+}
+
+.imgPerfil{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.imgPerfil img{
+    width: 90px;
+    height: 90px;
+    border-radius: 6rem;
+    z-index: 1;
+    border: 3px solid;
+}
+
+.circulo::before,
+.circulo::after{
+    content: "";
+    position: absolute;
+    inset:-16px;
+    border-radius: 50%;
+    border:inherit;
+    animation:inherit;
+    animation-duration: 4s;
+}
+
+.circulo::after{
+    animation-duration: 8s;
+}
+
+.nomeStatus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.nomeStatus h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.6rem;
+}
+
+
+.status{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.status p span{
+    opacity: 0.5;
+}
+
+.circuloStatus{
+    display: flex;
+    background-color: rgb(4, 255, 4);
+    border-radius: 6rem;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0px 0px 10px 1px rgb(4, 255, 4);
+}
+
+
+@keyframes s4 {
+    100% {transform: rotate(1turn)}
+}
+
+
+
+
+
+
+
+/* .custom-loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #0000;
+    border-right-color: #766DF497;
+    position: relative;
+    animation: s4 2s infinite linear;
+  }
+
+  .custom-loader:before,
+  .custom-loader:after {
+    content: "";
+    position: absolute;
+    inset:-16px;
+    border-radius: 50%;
+    border:inherit;
+    animation:inherit;
+    animation-duration: 4s;
+  }
+  .custom-loader:after {
+    animation-duration: 8s;
+  }
+  
+  @keyframes s4 {
+    100% {transform: rotate(1turn)}
+  } */

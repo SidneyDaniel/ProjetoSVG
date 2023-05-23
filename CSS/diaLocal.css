@@ -1,0 +1,94 @@
+
+
+
+
+/* Os valores hexadecimais são precedidos pelo caractere #, que é codificado como %23 */
+
+/* animation-delay: calc(.2s * var(--i)); */
+
+.atividade{
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    
+}
+
+.atividade span{
+    display: inline;
+    width: 7px;
+    height: 7px;
+    margin-right: 2px;
+    background-color: #4e4646b8;
+    border-radius: 6rem;
+    animation: bolinhas 2s infinite linear;
+    animation-delay: calc(.2s * var(--i));
+}
+
+
+.diaLocalData{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.dia{
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect fill='%23000' width='50' height='50' x='0' y='0' /><rect fill='%23000' width='50' height='50' x='50' y='50' /><rect fill='%234e4646b8' width='50' height='50' x='50' y='0' /><rect fill='%234e4646b8' width='50' height='50' x='0' y='50' /></svg>");
+    background-size: 30px;
+    width: 200px;
+    height: 110px;
+    margin: 0 0 5rem 5rem;
+    background-color: #4e4646b8;
+    animation:  s5 8s infinite linear;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 5px; 
+}
+
+.dia h1{
+    transform: rotate(-90deg);
+    background-color: transparent;
+}
+
+.dia h2{
+    background-color: transparent;
+    font-size: 40px;
+}
+
+.localData{
+    margin-bottom: 0.1rem;
+}
+
+.localData h1{
+    font-size: 14px;
+}
+
+
+@keyframes s5 {
+    0%{
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect fill='%23000' width='50' height='50' x='0' y='0' /><rect fill='%23000' width='50' height='50' x='50' y='50' /><rect fill='%234e4646b8' width='50' height='50' x='50' y='0' /><rect fill='%234e4646b8' width='50' height='50' x='0' y='50' /></svg>");
+    }
+
+    50%{
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect fill='%234e4646b8' width='50' height='50' x='0' y='0' /><rect fill='%234e4646b8' width='50' height='50' x='50' y='50' /><rect fill='%23000' width='50' height='50' x='50' y='0' /><rect fill='%23000' width='50' height='50' x='0' y='50' /></svg>");    }
+    
+    100%{
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect fill='%23000' width='50' height='50' x='0' y='0' /><rect fill='%23000' width='50' height='50' x='50' y='50' /><rect fill='%234e4646b8' width='50' height='50' x='50' y='0' /><rect fill='%234e4646b8' width='50' height='50' x='0' y='50' /></svg>");
+    }
+}
+
+
+@keyframes bolinhas {
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
